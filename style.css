@@ -2,6 +2,10 @@
 
 :root {
     --white: #f2f2f2;
+    --darkShade: #4C545C;
+    --deepGray : #9EABB2;
+    --cyan: #26BBA4;
+    --blueViolet: #6174FF;
 }
 
 body {
@@ -15,5 +19,56 @@ body {
 }
 
 .header_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(./images/headerBackground.png);
+    width: 1440px;
+    height: 363px;
     border: 1px solid #000;
+}
+
+h1 {
+    color: var(--darkShade);
+}
+
+.under_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    color: var(--deepGray);
+}
+
+.upper {
+    text-align: center;
+}
+
+.lower {
+    text-align: center;
+}
+
+button {
+    width: 227px;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    color: var(--white);
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.foriOs {
+    background-color: var(--cyan);
+    margin-right: 7px;
+}
+
+.forMac {
+    background-color: var(--blueViolet);
+    margin-left: 7px;
 }
